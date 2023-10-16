@@ -23,4 +23,18 @@ function customSort($string) {
     sort($uppercaseChars);
     sort($numbers);
 
+    $sortedString = implode('', $lowercaseChars) . implode('', $uppercaseChars) . implode('', $numbers);
+
+    return $sortedString;
 }
+
+$inputString = "HiImkeVInANDim17";
+$sortedString = customSort($inputString);
+echo $sortedString;
+
+
+
+
+
+
+
